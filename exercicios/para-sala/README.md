@@ -161,6 +161,7 @@
        for linha in leitor:
            cursor.execute("INSERT INTO clientes (nome, email) VALUES (?, ?)", (linha[1], linha[2]))
 
+
    conn.commit()
    cursor.close()
    conn.close()
